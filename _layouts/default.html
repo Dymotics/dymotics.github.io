@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+
+    <!--<meta charset="utf-8">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+    <!--<meta name="description" content="{{ page.description ? page.description : site.description }}" />-->
+
+    <title>{{ page.title }}</title>
+
+    <!--<link rel="shortcut icon" href="/assets/favicon.ico">-->
+    <!--<link href="/css/main.css" rel="stylesheet" media="all">-->
+
+    <meta property="og:site_name" content="Dymotics" />
+    <meta property="og:title" content="{{ page.title ? page.title : site.title }}"/>
+    <meta property="og:description" content="{{ page.description ? page.description : site.description }}" />
+    <meta property="og:image" content="http://i.imgur.com/BI618E5.png" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{{ page.description ? page.description : site.description }}" />
+    <meta name="twitter:title" content="{{ page.title ? page.title : site.title }}" />
+
+  </head>
+  <body>
+    <header>
+      <h1><a href="/" title="Home">Dymotics <span>blog</span></a></h1>
+
+    </header>
+    
+    <ol id="posts">
+      {{content}}
+    </ol>
+
+    <footer>
+      <ol>
+        <li><a href="https://twitter.com/dymotics" title="funddy on Twitter">Twitter</a></li>
+        <li><a href="http://www.facebook.com/dymotics">Facebook</a></li>
+        <li><a href="/es/">Castellano</a></li>
+        <li><a href="/">English</a></li>
+      </ol>
+    </footer>
+  </body>
+</html>
